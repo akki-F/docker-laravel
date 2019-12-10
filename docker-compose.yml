@@ -35,7 +35,7 @@ services:
     image: mysql:5.7
     container_name: db-con
     ports:
-      - 3306:3306
+      - 33060:3306
     volumes:
       - db-store:/var/lib/mysql
       - ./logs:/var/log/mysql
