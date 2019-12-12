@@ -7,3 +7,4 @@
 # 6. composer install
 # 7. cp .env.example .env
 # 8. php artisan key:generate
+# please access 127.0.0.1:10080
