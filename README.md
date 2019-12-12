@@ -1,8 +1,9 @@
-# mkdir docker-laravel && cd $_
-# git clone https://github.com/akki-F/docker-laravel.git
-# docker-compose up -d --build
-# docker exec -it app-con /bin/sh
-# cd laravel
-# composer install
-# cp .env.example .env
-# php artisan key:generate
+ ŠÂ‹«\’zè‡
+# 1. mkdir docker-laravel && cd $_
+# 2. git clone https://github.com/akki-F/docker-laravel.git
+# 3. docker-compose up -d --build
+# 4. docker exec -it app-con /bin/sh
+# 5. cd laravel
+# 6. composer install
+# 7. cp .env.example .env
+# 8. php artisan key:generate
