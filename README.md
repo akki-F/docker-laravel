@@ -1,4 +1,4 @@
-# ŠÂ‹«\’zè‡
+# Construction procedure
 # 1. mkdir docker-laravel && cd $_
 # 2. git clone https://github.com/akki-F/docker-laravel.git
 # 3. docker-compose up -d --build
