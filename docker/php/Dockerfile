@@ -6,9 +6,12 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 
 RUN set -eux && \
-  apk add --update-cache --no-cache --virtual=.build-dependencies tzdata && \
+  apk update --no-cache && \
+  apk upgrade --no-cache  && \
+  apk add --no-cache tzdata && \
   cp /usr/share/zoneinfo/${TZ} /etc/localtime && \
-  apk del .build-dependencies && \
+  apk del --purge tzdata && \
+  apk add --no-cache --virtual=.build-dependencies nodejs-npm && \
   docker-php-ext-install bcmath pdo_mysql && \
   curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
   composer config -g repos.packagist composer https://packagist.jp && \
